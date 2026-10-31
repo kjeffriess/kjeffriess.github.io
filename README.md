@@ -4,7 +4,7 @@ Static GitHub Pages site for projects, competition STEP downloads, Instagram, an
 
 ## Publishing
 
-Create a public repository in the intended GitHub account, push these files to `main`, and choose GitHub Actions under Settings → Pages → Source. The included workflow publishes only the public site files. Use `<username>.github.io` as the repository name for an account-level site; any other repository name gives a project URL.
+Live site: https://kjeffriess.github.io/ . Repository: https://github.com/kjeffriess/kjeffriess.github.io . GitHub Pages publishes automatically from the main branch, root directory. HTTPS is enforced. No custom workflow is needed.
 
 ## Adding competition downloads
 
