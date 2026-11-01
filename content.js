@@ -3,7 +3,7 @@ window.siteContent = {
   projects: [{
     id: 'chatgpt-catapult',
     category: 'CATAPULT COMPETITION / CHATGPT',
-    title: 'STRIKE 2.9',
+    title: 'ChatGPT’s Catapult',
     description: 'ChatGPT’s finger-powered ping pong catapult. Explore the complete assembly in 3D, then download the four-piece print layout to make your own.',
     version: 'Four parts · No screws or glue · STEP / 268 KB',
     imageUrl: 'projects/strike29/assembly.png',
@@ -15,7 +15,7 @@ window.siteContent = {
   }, {
     id: 'claude-catapult',
     category: 'CATAPULT COMPETITION / CLAUDE',
-    title: 'Claude’s Finger Catapult',
+    title: 'Claude’s Catapult',
     description: 'Claude’s three-part finger-powered catapult. Explore the assembled design in 3D, then download the parts laid out for printing.',
     version: 'Three parts · No hardware · STEP / 181 KB',
     imageUrl: 'projects/claude-catapult/assembly.png',
