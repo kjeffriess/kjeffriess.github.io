@@ -27,3 +27,5 @@ Trebuchet entries: ChatGPT uses Mantis35_exports/Mantis35_Assembly.step for its 
 All interactive previews use the same neutral gray material, applied before revealing the model. This changes preview appearance only; source CAD files and STEP downloads retain their original materials.
 
 Competition tabs: list competitions in the desired display order in content.js (Catapult is first for now), and give every project its competition ID. The first competition opens on a normal visit. Only the selected competition is shown, and its cards are created on first selection. Existing project links still open their owning competition. Competition links use #competition-ID. Tabs support arrow keys, Home/End and browser Back/Forward.
+
+Egg Drop sources: D:/Content/Competitions/Egg Drop. ChatGPT preview: Halo-R12-Stable-Assembled.step; download: Halo-R12-Stable-PrintPlate.step. Claude preview: Claude_EggDrop_AIRBRAKE_ASSEMBLED_v2.step; download: Claude_EggDrop_AIRBRAKE_A1_plate_v2.step. Both STEP downloads are unchanged, with assembled GLB previews using the shared gray finish. Catapult remains first by request.

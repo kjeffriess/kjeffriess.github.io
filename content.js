@@ -3,7 +3,8 @@ window.siteContent = {
   // Display order; the first tab opens by default. Catapult is featured for now.
   competitions: [
     { id: 'catapult', title: 'Catapult' },
-    { id: 'trebuchet', title: 'Trebuchet' }
+    { id: 'trebuchet', title: 'Trebuchet' },
+    { id: 'egg-drop', title: 'Egg Drop' }
   ],
   projects: [{
     id: 'chatgpt-catapult',
@@ -57,6 +58,30 @@ window.siteContent = {
     downloadFilename: 'pingpong_trebuchet_plate.step',
     downloadLabel: 'Download print-ready STEP',
     downloadNote: 'Parts are arranged in the supplied print layout. Import into your slicer at 100% scale.'
+  }, {
+    id: 'chatgpt-egg-drop',
+    competition: 'egg-drop',
+    category: 'EGG DROP COMPETITION / CHATGPT',
+    title: 'ChatGPT’s Egg Drop',
+    description: 'ChatGPT’s Halo R12 Stable egg-drop design. Explore the assembled model in 3D, then download the print layout.',
+    version: 'Halo R12 Stable · STEP / 4.61 MB',
+    modelUrl: 'projects/chatgpt-egg-drop/assembly.glb',
+    downloadUrl: 'projects/chatgpt-egg-drop/Halo-R12-Stable-PrintPlate.step',
+    downloadFilename: 'Halo-R12-Stable-PrintPlate.step',
+    downloadLabel: 'Download print-ready STEP',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
+  }, {
+    id: 'claude-egg-drop',
+    competition: 'egg-drop',
+    category: 'EGG DROP COMPETITION / CLAUDE',
+    title: 'Claude’s Egg Drop',
+    description: 'Claude’s Airbrake egg-drop design. Explore the assembled model in 3D, then download the A1 print layout.',
+    version: 'Airbrake v2 · STEP / 1.24 MB',
+    modelUrl: 'projects/claude-egg-drop/assembly.glb',
+    downloadUrl: 'projects/claude-egg-drop/Claude_EggDrop_AIRBRAKE_A1_plate_v2.step',
+    downloadFilename: 'Claude_EggDrop_AIRBRAKE_A1_plate_v2.step',
+    downloadLabel: 'Download print-ready STEP',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }],
   features: []
 };
