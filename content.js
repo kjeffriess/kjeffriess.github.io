@@ -1,9 +1,9 @@
 // Public project assets. The assembled preview and print download stay separate.
 window.siteContent = {
-  // Newest competition first; the first tab opens by default.
+  // Display order; the first tab opens by default. Catapult is featured for now.
   competitions: [
-    { id: 'trebuchet', title: 'Trebuchet' },
-    { id: 'catapult', title: 'Catapult' }
+    { id: 'catapult', title: 'Catapult' },
+    { id: 'trebuchet', title: 'Trebuchet' }
   ],
   projects: [{
     id: 'chatgpt-catapult',
