@@ -113,7 +113,7 @@
         const tab = text('button', competition.title); tab.type = 'button'; tab.className = 'competition-tab';
         tab.id = 'tab-' + competition.id; tab.setAttribute('role', 'tab');
         const panel = document.createElement('div'); panel.id = 'competition-' + competition.id; panel.className = 'competition-panel';
-        panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tab.id); panel.tabIndex = 0; panel.hidden = true;
+        panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tab.id); panel.hidden = true;
         tab.setAttribute('aria-controls', panel.id); tab.setAttribute('aria-selected', 'false'); tab.tabIndex = -1;
         tablist.append(tab); target.append(panel);
         return { competition, entries, tab, panel, rendered: false };
