@@ -108,12 +108,10 @@
       const tablist = document.createElement('div'); tablist.className = 'competition-tabs';
       tablist.setAttribute('role', 'tablist'); tablist.setAttribute('aria-label', 'Competitions');
       target.append(tablist);
-      const groups = competitions.map((competition, index) => {
+      const groups = competitions.map(competition => {
         const entries = projects.filter(p => p.competition === competition.id);
         const tab = text('button', competition.title); tab.type = 'button'; tab.className = 'competition-tab';
         tab.id = 'tab-' + competition.id; tab.setAttribute('role', 'tab');
-        const count = text('span', entries.length); count.className = 'competition-count'; count.setAttribute('aria-hidden', 'true'); tab.append(count);
-        if (index === 0) { const badge = text('span', 'Latest'); badge.className = 'competition-latest'; tab.append(badge); }
         const panel = document.createElement('div'); panel.id = 'competition-' + competition.id; panel.className = 'competition-panel';
         panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tab.id); panel.tabIndex = 0; panel.hidden = true;
         tab.setAttribute('aria-controls', panel.id); tab.setAttribute('aria-selected', 'false'); tab.tabIndex = -1;
