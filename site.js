@@ -36,7 +36,7 @@
     const hint = text('p', 'Explore the assembled model.'); hint.className = 'viewer-hint'; hint.setAttribute('role', 'status'); hint.setAttribute('aria-live', 'polite');
     controls.append(start, reset); media.append(controls, hint);
     start.addEventListener('click', async () => {
-      start.disabled = true; start.textContent = 'Loading 3D…'; hint.textContent = 'Loading the assembled catapult…';
+      start.disabled = true; start.textContent = 'Loading 3D…'; hint.textContent = 'Loading ' + p.title + '…';
       let viewer;
       try {
         await loadViewer();
