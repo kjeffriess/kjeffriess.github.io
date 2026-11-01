@@ -12,6 +12,18 @@ window.siteContent = {
     downloadFilename: 'Strike29-PrintPlate.step',
     downloadLabel: 'Download print-ready STEP',
     downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. CAD design; physical print testing is still pending.'
+  }, {
+    id: 'claude-catapult',
+    category: 'CATAPULT COMPETITION / CLAUDE',
+    title: 'Claude’s Finger Catapult',
+    description: 'Claude’s three-part finger-powered catapult. Explore the assembled design in 3D, then download the parts laid out for printing.',
+    version: 'Three parts · No hardware · STEP / 181 KB',
+    imageUrl: 'projects/claude-catapult/assembly.png',
+    modelUrl: 'projects/claude-catapult/catapult_ASSEMBLED.glb',
+    downloadUrl: 'projects/claude-catapult/catapult_PRINT_PLATE.step',
+    downloadFilename: 'catapult_PRINT_PLATE.step',
+    downloadLabel: 'Download print-ready STEP',
+    downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. Assemble the base, arm and snap-fit pin by hand.'
   }],
   features: []
 };

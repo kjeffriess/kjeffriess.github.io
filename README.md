@@ -19,3 +19,5 @@ Bump the stylesheet and script query versions in index.html when changing them. 
 ## Identity
 
 Kevin Jeffries / @kev.jeffriess. Instagram: https://www.instagram.com/kev.jeffriess/ . TikTok: https://www.tiktok.com/@kevjeffriesx . YouTube: https://www.youtube.com/@kevjeffriess . Email: kev.jeffries00@gmail.com.
+
+Claude's Finger Catapult comes from D:/Content/Competitions/Catapult/Claude. Its preview is converted from catapult_ASSEMBLED.step; the download is the unchanged catapult_PRINT_PLATE.step. Its three parts are the base, arm and snap-fit pin.
