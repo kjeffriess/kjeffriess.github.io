@@ -1,21 +1,21 @@
-# Kevin Jeffries — personal site
+# Kevin Jeffries - personal site
 
-Static GitHub Pages site for projects, competition STEP downloads, Instagram, and email contact. No dependencies or build step.
+GitHub Pages publishes main, root directory, at https://kjeffriess.github.io/ . No build step.
 
-## Publishing
+## Competition files
 
-Live site: https://kjeffriess.github.io/ . Repository: https://github.com/kjeffriess/kjeffriess.github.io . GitHub Pages publishes automatically from the main branch, root directory. HTTPS is enforced. No custom workflow is needed.
+Place public project files in projects/<project-id>/ and add an entry in content.js. downloadUrl points to the original print-ready STEP; modelUrl points to a GLB converted from the assembled STEP; imageUrl is the assembly poster. These are separate assets intentionally. Optional downloadFilename, downloadLabel, downloadNote, category and version control the card text. HTTPS external links and same-site relative paths are accepted.
 
-## Adding competition downloads
+Convert an assembled STEP using cadgen 0.7.26: cadgen glb build Assembly.step Assembly.glb. Verify the preview orientation and that the downloadable STEP matches the supplied print layout. Future updates can be made by asking Codex to add the files. Uploading requires authorized repository access; visitors cannot upload through this site.
 
-Upload the provided STEP files as assets on a GitHub Release in the public repository. Add an entry to `content.js` with `id` (a unique lowercase hyphenated slug), `title`, `description`, `version`, and the asset's HTTPS `downloadUrl`. Optional `imageUrl` is an HTTPS project image. Keep existing release assets for stable older download links. A project's direct link is the site URL followed by `#` and its id.
+STRIKE 2.9 comes from D:/Content/Competitions/Catapult/ChatGPT. Its preview uses Strike29-Assembly.step, and its download is the unchanged Strike29-PrintPlate.step. Physical print testing is pending according to the source README.
 
-The library is deliberately empty until real files are supplied. No dummy downloads are included. Public release assets must be intended for public distribution.
+## Viewer
 
-## Adding featured content
+The viewer and model load only after View in 3D is clicked. Google model-viewer 4.1.0 is loaded from jsDelivr with a pinned SHA-384 integrity check and anonymous CORS. The original poster and download remain available if it fails. The library is Apache-2.0 licensed: https://github.com/google/model-viewer . Files are hosted on GitHub Pages. The viewer supports rotation, zoom, pan, keyboard navigation and reset. No accounts, analytics, upload endpoint or paid service.
 
-Add entries to the `features` array in `content.js` with `title`, `description`, and an HTTPS `url`. Push changes to `main` to publish automatically.
+Bump the stylesheet and script query versions in index.html when changing them. Test desktop and narrow phone widths, loading, interaction, reset and the download URL before finishing an update.
 
 ## Identity
 
-Display name: Kevin Jeffries. Display handle: @kev.jeffriess. Instagram: https://www.instagram.com/kev.jeffries/. Contact: kev.jeffries00@gmail.com. The handle and Instagram differ intentionally per the owner's instructions.
+Kevin Jeffries / @kev.jeffriess. Instagram: https://www.instagram.com/kev.jeffriess/ . TikTok: https://www.tiktok.com/@kevjeffriesx . YouTube: https://www.youtube.com/@kevjeffriess . Email: kev.jeffries00@gmail.com.
