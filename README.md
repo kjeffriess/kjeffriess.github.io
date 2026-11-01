@@ -12,7 +12,7 @@ STRIKE 2.9 comes from D:/Content/Competitions/Catapult/ChatGPT. Its preview uses
 
 ## Viewer
 
-The viewer and model load only after View in 3D is clicked. Google model-viewer 4.1.0 is loaded from jsDelivr with a pinned SHA-384 integrity check and anonymous CORS. The original poster and download remain available if it fails. The library is Apache-2.0 licensed: https://github.com/google/model-viewer . Files are hosted on GitHub Pages. The viewer supports rotation, zoom, pan, keyboard navigation and reset. No accounts, analytics, upload endpoint or paid service.
+The viewer and model load automatically within 300 pixels of the viewport, with no activation click. Offscreen models wait until approached. Loading and 3D stages use white backgrounds; existing image assets remain available but are not shown ahead of interactive models. Google model-viewer 4.1.0 is loaded from jsDelivr with a pinned SHA-384 integrity check and anonymous CORS. A retry button and the STEP download remain available if 3D fails. Automatic loading never moves keyboard focus. The library is Apache-2.0 licensed: https://github.com/google/model-viewer . Files are hosted on GitHub Pages. The viewer supports rotation, zoom, pan, keyboard navigation and reset. No accounts, analytics, upload endpoint or paid service.
 
 Bump the stylesheet and script query versions in index.html when changing them. Test desktop and narrow phone widths, loading, interaction, reset and the download URL before finishing an update.
 

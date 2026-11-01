@@ -25,18 +25,23 @@
   function preview(p) {
     const media = document.createElement('div'); media.className = 'project-media';
     const stage = document.createElement('div'); stage.className = 'model-stage';
-    if (safeUrl(p.imageUrl)) {
+    const hasModel = Boolean(safeUrl(p.modelUrl));
+    if (!hasModel && safeUrl(p.imageUrl)) {
       const img = document.createElement('img'); img.src = safeUrl(p.imageUrl); img.alt = p.title + ' — assembled view'; img.loading = 'lazy'; stage.append(img);
     }
     media.append(stage);
-    if (!safeUrl(p.modelUrl)) return media;
+    if (!hasModel) return media;
+    const placeholder = text('span', '3D preview'); placeholder.className = 'model-placeholder'; stage.append(placeholder);
     const controls = document.createElement('div'); controls.className = 'viewer-controls';
-    const start = text('button', 'View in 3D'); start.type = 'button'; start.className = 'button secondary';
-    const reset = text('button', 'Reset view'); reset.type = 'button'; reset.className = 'button secondary'; reset.hidden = true;
-    const hint = text('p', 'Explore the assembled model.'); hint.className = 'viewer-hint'; hint.setAttribute('role', 'status'); hint.setAttribute('aria-live', 'polite');
+    const start = text('button', 'Retry 3D'); start.type = 'button'; start.className = 'button secondary'; start.hidden = true;
+    const reset = text('button', 'Reset view'); reset.type = 'button'; reset.className = 'button secondary'; reset.disabled = true;
+    const hint = text('p', 'The 3D preview loads automatically.'); hint.className = 'viewer-hint'; hint.setAttribute('role', 'status'); hint.setAttribute('aria-live', 'polite');
     controls.append(start, reset); media.append(controls, hint);
-    start.addEventListener('click', async () => {
-      start.disabled = true; start.textContent = 'Loading 3D…'; hint.textContent = 'Loading ' + p.title + '…';
+    let loading = false;
+    const activate = async () => {
+      if (loading || stage.classList.contains('model-ready')) return;
+      loading = true; start.hidden = true; reset.hidden = false; reset.disabled = true;
+      stage.setAttribute('aria-busy', 'true'); placeholder.textContent = 'Loading 3D…'; hint.textContent = 'Loading ' + p.title + '…';
       let viewer;
       try {
         await loadViewer();
@@ -52,16 +57,24 @@
         });
         viewer.setAttribute('src', safeUrl(p.modelUrl)); stage.append(viewer);
         await loaded;
-        stage.classList.add('model-ready'); start.hidden = true; reset.hidden = false;
+        stage.classList.add('model-ready'); placeholder.hidden = true; reset.disabled = false;
         hint.textContent = 'Drag to rotate · Pinch or scroll to zoom · Two fingers or right-drag to pan';
         reset.onclick = () => { viewer.cameraOrbit = '35deg 65deg auto'; viewer.cameraTarget = 'auto auto auto'; viewer.fieldOfView = 'auto'; };
-        viewer.focus();
       } catch {
         if (viewer) viewer.remove();
-        start.disabled = false; start.textContent = 'Try 3D again';
-        hint.textContent = '3D couldn’t load here. You can still view the image and download the print-ready STEP.';
+        start.hidden = false; reset.hidden = true; placeholder.textContent = '3D preview unavailable';
+        hint.textContent = '3D couldn’t load here. Try again or download the print-ready STEP.';
+      } finally {
+        loading = false; stage.removeAttribute('aria-busy');
       }
-    });
+    };
+    start.addEventListener('click', activate);
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) { observer.disconnect(); activate(); }
+      }, { rootMargin: '300px 0px' });
+      observer.observe(stage);
+    } else { activate(); }
     return media;
   }
   const projects = (data.projects || []).filter(p => safeUrl(p.downloadUrl));
