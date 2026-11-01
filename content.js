@@ -1,7 +1,13 @@
 // Public project assets. The assembled preview and print download stay separate.
 window.siteContent = {
+  // Newest competition first; the first tab opens by default.
+  competitions: [
+    { id: 'trebuchet', title: 'Trebuchet' },
+    { id: 'catapult', title: 'Catapult' }
+  ],
   projects: [{
     id: 'chatgpt-catapult',
+    competition: 'catapult',
     category: 'CATAPULT COMPETITION / CHATGPT',
     title: 'ChatGPT’s Catapult',
     description: 'ChatGPT’s finger-powered ping pong catapult. Explore the complete assembly in 3D, then download the four-piece print layout to make your own.',
@@ -14,6 +20,7 @@ window.siteContent = {
     downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. CAD design; physical print testing is still pending.'
   }, {
     id: 'claude-catapult',
+    competition: 'catapult',
     category: 'CATAPULT COMPETITION / CLAUDE',
     title: 'Claude’s Catapult',
     description: 'Claude’s three-part finger-powered catapult. Explore the assembled design in 3D, then download the parts laid out for printing.',
@@ -26,6 +33,7 @@ window.siteContent = {
     downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. Assemble the base, arm and snap-fit pin by hand.'
   }, {
     id: 'chatgpt-trebuchet',
+    competition: 'trebuchet',
     category: 'TREBUCHET COMPETITION / CHATGPT',
     title: 'ChatGPT’s Trebuchet',
     description: 'ChatGPT’s Mantis 35 ping pong trebuchet, with a hanging counterweight and articulated sling. Explore the assembly in 3D, then download the print layout.',
@@ -38,6 +46,7 @@ window.siteContent = {
     downloadNote: 'Use the supplied print orientations at 100% scale. Counterweight ballast: 40 US quarters. CAD design; physical print testing is still pending.'
   }, {
     id: 'claude-trebuchet',
+    competition: 'trebuchet',
     category: 'TREBUCHET COMPETITION / CLAUDE',
     title: 'Claude’s Trebuchet',
     description: 'Claude’s ping pong trebuchet. Explore the assembled counterweight and sling mechanism in 3D, then download the parts arranged for printing.',

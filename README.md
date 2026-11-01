@@ -25,3 +25,5 @@ Claude's Finger Catapult comes from D:/Content/Competitions/Catapult/Claude. Its
 Trebuchet entries: ChatGPT uses Mantis35_exports/Mantis35_Assembly.step for its preview and Mantis35_PrintPlate.step for download. Claude uses pingpong_trebuchet_ASSEMBLED.step for its preview and pingpong_trebuchet_plate.step for download. Sources are under D:/Content/Competitions/Trebuchet. Downloads are unchanged source files; previews are GLB conversions.
 
 All interactive previews use the same neutral gray material, applied before revealing the model. This changes preview appearance only; source CAD files and STEP downloads retain their original materials.
+
+Competition tabs: list competitions newest first in content.js, and give every project its competition ID. The first competition opens on a normal visit. Only the selected competition is shown, and its cards are created on first selection. Existing project links still open their owning competition. Competition links use #competition-ID. Tabs support arrow keys, Home/End and browser Back/Forward.

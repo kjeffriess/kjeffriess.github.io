@@ -87,7 +87,7 @@
   const projects = (data.projects || []).filter(p => safeUrl(p.downloadUrl));
   if (projects.length) {
     const target = document.getElementById('projects'); target.replaceChildren();
-    for (const p of projects) {
+    function projectCard(p) {
       const card = document.createElement('article'); card.className = 'project project-download';
       if (p.id && /^[a-z0-9-]+$/.test(p.id)) card.id = p.id;
       if (safeUrl(p.imageUrl) || safeUrl(p.modelUrl)) card.append(preview(p));
@@ -99,10 +99,64 @@
       if (new URL(link.href).origin === location.origin) link.download = p.downloadFilename || '';
       details.append(link);
       if (p.downloadNote) { const note = text('p', p.downloadNote); note.className = 'download-note'; details.append(note); }
-      card.append(details); target.append(card);
+      card.append(details); return card;
     }
-    const anchor = document.getElementById(location.hash.slice(1));
-    if (anchor && target.contains(anchor)) requestAnimationFrame(() => anchor.scrollIntoView({ behavior: 'instant' }));
+    const competitions = (data.competitions || []).filter(c => /^[a-z0-9-]+$/.test(c.id) && projects.some(p => p.competition === c.id));
+    if (!competitions.length) {
+      projects.forEach(p => target.append(projectCard(p)));
+    } else {
+      const tablist = document.createElement('div'); tablist.className = 'competition-tabs';
+      tablist.setAttribute('role', 'tablist'); tablist.setAttribute('aria-label', 'Competitions');
+      target.append(tablist);
+      const groups = competitions.map((competition, index) => {
+        const entries = projects.filter(p => p.competition === competition.id);
+        const tab = text('button', competition.title); tab.type = 'button'; tab.className = 'competition-tab';
+        tab.id = 'tab-' + competition.id; tab.setAttribute('role', 'tab');
+        const count = text('span', entries.length); count.className = 'competition-count'; count.setAttribute('aria-hidden', 'true'); tab.append(count);
+        if (index === 0) { const badge = text('span', 'Latest'); badge.className = 'competition-latest'; tab.append(badge); }
+        const panel = document.createElement('div'); panel.id = 'competition-' + competition.id; panel.className = 'competition-panel';
+        panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tab.id); panel.tabIndex = 0; panel.hidden = true;
+        tab.setAttribute('aria-controls', panel.id); tab.setAttribute('aria-selected', 'false'); tab.tabIndex = -1;
+        tablist.append(tab); target.append(panel);
+        return { competition, entries, tab, panel, rendered: false };
+      });
+      function select(group, updateUrl = false) {
+        for (const item of groups) {
+          const active = item === group;
+          item.tab.setAttribute('aria-selected', String(active)); item.tab.tabIndex = active ? 0 : -1;
+          item.panel.hidden = !active;
+        }
+        if (!group.rendered) { group.entries.forEach(p => group.panel.append(projectCard(p))); group.rendered = true; }
+        if (updateUrl && location.hash !== '#' + group.panel.id) history.pushState(null, '', '#' + group.panel.id);
+      }
+      function followLink(scroll = false) {
+        const id = location.hash.slice(1);
+        const group = groups.find(g => g.panel.id === id || g.entries.some(p => p.id === id));
+        if (!group) return false;
+        select(group);
+        if (scroll) requestAnimationFrame(() => {
+          // Keep the tabs visible for competition links; honor existing project links.
+          const anchor = id === group.panel.id ? tablist : document.getElementById(id);
+          if (anchor) anchor.scrollIntoView({ behavior: 'instant', block: 'start' });
+        });
+        return true;
+      }
+      groups.forEach((group, index) => {
+        group.tab.addEventListener('click', () => select(group, true));
+        group.tab.addEventListener('keydown', event => {
+          let next;
+          if (event.key === 'ArrowRight') next = (index + 1) % groups.length;
+          if (event.key === 'ArrowLeft') next = (index - 1 + groups.length) % groups.length;
+          if (event.key === 'Home') next = 0;
+          if (event.key === 'End') next = groups.length - 1;
+          if (next === undefined) return;
+          event.preventDefault(); select(groups[next], true); groups[next].tab.focus();
+        });
+      });
+      if (!followLink(true)) select(groups[0]);
+      window.addEventListener('hashchange', () => followLink(true));
+      window.addEventListener('popstate', () => { if (!followLink(true)) select(groups[0]); });
+    }
   }
   for (const item of data.features || []) {
     if (!safeUrl(item.url)) continue;
