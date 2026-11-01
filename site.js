@@ -57,6 +57,13 @@
         });
         viewer.setAttribute('src', safeUrl(p.modelUrl)); stage.append(viewer);
         await loaded;
+        // Use one consistent preview finish, regardless of source CAD part colors.
+        for (const material of viewer.model.materials) {
+          const surface = material.pbrMetallicRoughness;
+          surface.setBaseColorFactor([0.3515326083, 0.3515326083, 0.3515326083, 1]);
+          surface.setRoughnessFactor(0.42);
+          surface.setMetallicFactor(0.03);
+        }
         stage.classList.add('model-ready'); placeholder.hidden = true; reset.disabled = false;
         hint.textContent = 'Drag to rotate · Pinch or scroll to zoom · Two fingers or right-drag to pan';
         reset.onclick = () => { viewer.cameraOrbit = '35deg 65deg auto'; viewer.cameraTarget = 'auto auto auto'; viewer.fieldOfView = 'auto'; };

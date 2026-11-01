@@ -23,3 +23,5 @@ Kevin Jeffries / @kev.jeffriess. Instagram: https://www.instagram.com/kev.jeffri
 Claude's Finger Catapult comes from D:/Content/Competitions/Catapult/Claude. Its preview is converted from catapult_ASSEMBLED.step; the download is the unchanged catapult_PRINT_PLATE.step. Its three parts are the base, arm and snap-fit pin.
 
 Trebuchet entries: ChatGPT uses Mantis35_exports/Mantis35_Assembly.step for its preview and Mantis35_PrintPlate.step for download. Claude uses pingpong_trebuchet_ASSEMBLED.step for its preview and pingpong_trebuchet_plate.step for download. Sources are under D:/Content/Competitions/Trebuchet. Downloads are unchanged source files; previews are GLB conversions.
+
+All interactive previews use the same neutral gray material, applied before revealing the model. This changes preview appearance only; source CAD files and STEP downloads retain their original materials.
