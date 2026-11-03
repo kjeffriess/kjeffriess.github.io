@@ -18,7 +18,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/Strike29-PrintPlate.step',
     downloadFilename: 'Strike29-PrintPlate.step',
     downloadLabel: 'Download print-ready STEP',
-    downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. CAD design; physical print testing is still pending.'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }, {
     id: 'claude-catapult',
     competition: 'catapult',
@@ -31,7 +31,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/catapult_PRINT_PLATE.step',
     downloadFilename: 'catapult_PRINT_PLATE.step',
     downloadLabel: 'Download print-ready STEP',
-    downloadNote: 'Parts are oriented for printing. Import into your slicer at 100% scale. Assemble the base, arm and snap-fit pin by hand.'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }, {
     id: 'chatgpt-trebuchet',
     competition: 'trebuchet',
@@ -44,7 +44,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/Mantis35_PrintPlate.step',
     downloadFilename: 'Mantis35_PrintPlate.step',
     downloadLabel: 'Download print-ready STEP',
-    downloadNote: 'Use the supplied print orientations at 100% scale. Counterweight ballast: 40 US quarters. CAD design; physical print testing is still pending.'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }, {
     id: 'claude-trebuchet',
     competition: 'trebuchet',
@@ -57,7 +57,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/pingpong_trebuchet_plate.step',
     downloadFilename: 'pingpong_trebuchet_plate.step',
     downloadLabel: 'Download print-ready STEP',
-    downloadNote: 'Parts are arranged in the supplied print layout. Import into your slicer at 100% scale.'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }, {
     id: 'chatgpt-egg-drop',
     competition: 'egg-drop',

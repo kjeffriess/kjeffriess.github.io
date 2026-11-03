@@ -8,7 +8,7 @@ Place public project files in projects/<project-id>/ and add an entry in content
 
 Convert an assembled STEP using cadgen 0.7.26: cadgen glb build Assembly.step Assembly.glb. Verify the preview orientation and that the downloadable STEP matches the supplied print layout. Future updates can be made by asking Codex to add the files. Uploading requires authorized repository access; visitors cannot upload through this site.
 
-STRIKE 2.9 comes from D:/Content/Competitions/Catapult/ChatGPT. Its preview uses Strike29-Assembly.step, and its download is the unchanged Strike29-PrintPlate.step. Physical print testing is pending according to the source README.
+STRIKE 2.9 comes from D:/Content/Competitions/Catapult/ChatGPT. Its preview uses Strike29-Assembly.step, and its download is the unchanged Strike29-PrintPlate.step. Use the supplied print layout. Import into your slicer at 100% scale.
 
 ## Viewer
 
