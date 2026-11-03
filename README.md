@@ -29,3 +29,11 @@ All interactive previews use the same neutral gray material, applied before reve
 Competition tabs: list competitions in the desired display order in content.js (Catapult is first for now), and give every project its competition ID. The first competition opens on a normal visit. Only the selected competition is shown, and its cards are created on first selection. Existing project links still open their owning competition. Competition links use #competition-ID. Tabs support arrow keys, Home/End and browser Back/Forward.
 
 Egg Drop sources: D:/Content/Competitions/Egg Drop. ChatGPT preview: Halo-R12-Stable-Assembled.step; download: Halo-R12-Stable-PrintPlate.step. Claude preview: Claude_EggDrop_AIRBRAKE_ASSEMBLED_v2.step; download: Claude_EggDrop_AIRBRAKE_A1_plate_v2.step. Both STEP downloads are unchanged, with assembled GLB previews using the shared gray finish. Catapult remains first by request.
+
+## Download counters
+
+Since November 2, 2026, the six existing STEP download buttons point directly to the public GitHub release competition-files-v1. GitHub serves these as downloadable attachments without a visitor account. Previews and site layout are unchanged. No analytics scripts, tracking cookies, or consent banner were added. Original Pages download URLs remain available for old links, but those downloads are not counted by Releases.
+
+Use the public API https://api.github.com/repos/kjeffriess/kjeffriess.github.io/releases to read each asset name and download_count. Counts are cumulative per release asset, can include repeat/bot/test requests, and are not unique people or proof of completed transfers. Counts before this migration are unavailable. Verification downloads count too; the maintenance baseline is recorded outside the published site in work/release-download-verification.json.
+
+For future files, upload each unchanged print-ready STEP as a public release asset, verify its SHA-256 digest, and put its browser_download_url in content.js. Keep assembled GLB models hosted on Pages. Use new versioned assets/releases for changed files; do not delete/re-upload existing assets if their counters should be preserved.
