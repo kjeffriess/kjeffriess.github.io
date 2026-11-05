@@ -38,8 +38,8 @@ window.siteContent = {
     competition: 'trebuchet',
     category: 'TREBUCHET COMPETITION / CHATGPT',
     title: 'ChatGPT’s Trebuchet',
-    description: 'ChatGPT’s Mantis 35 ping pong trebuchet, with a hanging counterweight and articulated sling. Explore the assembly in 3D, then download the print layout.',
-    version: 'Mantis 35 · STEP / 743 KB',
+    description: 'ChatGPT’s ping pong trebuchet, with a hanging counterweight and articulated sling. Explore the assembly in 3D, then download the print layout.',
+    version: 'STEP / 743 KB',
     imageUrl: 'projects/chatgpt-trebuchet/assembly.png',
     modelUrl: 'projects/chatgpt-trebuchet/assembly.glb',
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/Mantis35_PrintPlate.step',
@@ -64,8 +64,8 @@ window.siteContent = {
     competition: 'egg-drop',
     category: 'EGG DROP COMPETITION / CHATGPT',
     title: 'ChatGPT’s Egg Drop',
-    description: 'ChatGPT’s Halo R12 Stable egg-drop design. Explore the assembled model in 3D, then download the print layout.',
-    version: 'Halo R12 Stable · STEP / 4.61 MB',
+    description: 'ChatGPT’s egg-drop design. Explore the assembled model in 3D, then download the print layout.',
+    version: 'STEP / 4.61 MB',
     modelUrl: 'projects/chatgpt-egg-drop/assembly.glb',
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/Halo-R12-Stable-PrintPlate.step',
     downloadFilename: 'Halo-R12-Stable-PrintPlate.step',
@@ -76,8 +76,8 @@ window.siteContent = {
     competition: 'egg-drop',
     category: 'EGG DROP COMPETITION / CLAUDE',
     title: 'Claude’s Egg Drop',
-    description: 'Claude’s Airbrake egg-drop design. Explore the assembled model in 3D, then download the A1 print layout.',
-    version: 'Airbrake v2 · STEP / 1.24 MB',
+    description: 'Claude’s egg-drop design. Explore the assembled model in 3D, then download the A1 print layout.',
+    version: 'STEP / 1.24 MB',
     modelUrl: 'projects/claude-egg-drop/assembly.glb',
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/competition-files-v1/Claude_EggDrop_AIRBRAKE_A1_plate_v2.step',
     downloadFilename: 'Claude_EggDrop_AIRBRAKE_A1_plate_v2.step',
@@ -94,7 +94,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/ChatGPT-Glider-STEP-and-Report.zip',
     downloadFilename: 'ChatGPT-Glider-STEP-and-Report.zip',
     downloadLabel: 'Download STEP + Report',
-    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design Report (PDF).'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }, {
     id: 'claude-glider',
     competition: 'gliders',
@@ -106,7 +106,7 @@ window.siteContent = {
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/Claude-Glider-STEP-and-Report.zip',
     downloadFilename: 'Claude-Glider-STEP-and-Report.zip',
     downloadLabel: 'Download STEP + Report',
-    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design Report (PDF).'
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }],
   features: []
 };
