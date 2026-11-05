@@ -40,10 +40,12 @@ For future files, upload each unchanged print-ready STEP as a public release ass
 
 ## Gliders
 
-Gliders bundles are public release assets under gliders-v1. Each ZIP includes the unchanged print-layout STEP and original PDF report; assembled GLBs stay on Pages. Gliders is the default tab. Gemini is not yet included.
+Gliders bundles are public release assets under gliders-v1. Each ZIP includes the unchanged print-layout STEP and original PDF report; assembled GLBs stay on Pages. Gliders is the default tab. Gemini is included alongside ChatGPT and Claude.
 
 ChatGPT sources: D:/Content/Competitions/Glider/Zephyr440_R2_100g. Preview: STEP/ZephyrR2_assembly.step. Bundle: STEP/ZephyrR2_A1_plate.step and output/pdf/ChatGPT_Project_Report.pdf.
 
 Claude sources: D:/Content/Competitions/Glider/Claude. Preview: STEP/Javelin420v5_assembly.step. Bundle: STEP/Javelin420v5_A1_plate.step and Claudes_Glider_Design_Report.pdf.
 
 Bundles were checked for ZIP integrity and exact source bytes. Release digests match the local ZIPs. Public download verification is recorded outside the site in work/glider-download-verification.json (one test request per bundle).
+
+Gemini sources: D:/Content/Competitions/Glider/Gemini. Preview: Valkyrie580_100g_Assembled.step (matching the print STEP header). Bundle: Gemini_Glider_PrintPlate.step and Gemini_Engineering_Report.pdf, preserved unchanged inside Gemini-Glider-STEP-and-Report.zip in gliders-v1.

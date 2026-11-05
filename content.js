@@ -107,6 +107,18 @@ window.siteContent = {
     downloadFilename: 'Claude-Glider-STEP-and-Report.zip',
     downloadLabel: 'Download STEP + Report',
     downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
+  }, {
+    id: 'gemini-glider',
+    competition: 'gliders',
+    category: 'GLIDER COMPETITION / GEMINI',
+    title: 'Gemini’s Glider',
+    description: 'Gemini’s glider. Explore the assembled design in 3D, then download the print layout and design Report together.',
+    version: 'ZIP / 1.24 MB',
+    modelUrl: 'projects/gemini-glider/assembly.glb',
+    downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/Gemini-Glider-STEP-and-Report.zip',
+    downloadFilename: 'Gemini-Glider-STEP-and-Report.zip',
+    downloadLabel: 'Download STEP + Report',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
   }],
   features: []
 };
