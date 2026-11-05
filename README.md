@@ -37,3 +37,13 @@ Since November 2, 2026, the six existing STEP download buttons point directly to
 Use the public API https://api.github.com/repos/kjeffriess/kjeffriess.github.io/releases to read each asset name and download_count. Counts are cumulative per release asset, can include repeat/bot/test requests, and are not unique people or proof of completed transfers. Counts before this migration are unavailable. Verification downloads count too; the maintenance baseline is recorded outside the published site in work/release-download-verification.json.
 
 For future files, upload each unchanged print-ready STEP as a public release asset, verify its SHA-256 digest, and put its browser_download_url in content.js. Keep assembled GLB models hosted on Pages. Use new versioned assets/releases for changed files; do not delete/re-upload existing assets if their counters should be preserved.
+
+## Gliders
+
+Gliders bundles are public release assets under gliders-v1. Each ZIP includes the unchanged print-layout STEP and original PDF report; assembled GLBs stay on Pages. Catapult remains the default tab. Gemini is not yet included.
+
+ChatGPT sources: D:/Content/Competitions/Glider/Zephyr440_R2_100g. Preview: STEP/ZephyrR2_assembly.step. Bundle: STEP/ZephyrR2_A1_plate.step and output/pdf/ChatGPT_Project_Report.pdf.
+
+Claude sources: D:/Content/Competitions/Glider/Claude. Preview: STEP/Javelin420v5_assembly.step. Bundle: STEP/Javelin420v5_A1_plate.step and Claudes_Glider_Design_Report.pdf.
+
+Bundles were checked for ZIP integrity and exact source bytes. Release digests match the local ZIPs. Public download verification is recorded outside the site in work/glider-download-verification.json (one test request per bundle).

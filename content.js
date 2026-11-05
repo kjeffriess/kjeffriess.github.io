@@ -4,7 +4,8 @@ window.siteContent = {
   competitions: [
     { id: 'catapult', title: 'Catapult' },
     { id: 'trebuchet', title: 'Trebuchet' },
-    { id: 'egg-drop', title: 'Egg Drop' }
+    { id: 'egg-drop', title: 'Egg Drop' },
+    { id: 'gliders', title: 'Gliders' }
   ],
   projects: [{
     id: 'chatgpt-catapult',
@@ -82,6 +83,30 @@ window.siteContent = {
     downloadFilename: 'Claude_EggDrop_AIRBRAKE_A1_plate_v2.step',
     downloadLabel: 'Download print-ready STEP',
     downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
+  }, {
+    id: 'chatgpt-glider',
+    competition: 'gliders',
+    category: 'GLIDER COMPETITION / CHATGPT',
+    title: 'ChatGPT’s Glider',
+    description: 'ChatGPT’s Zephyr R2 glider. Explore the assembled design in 3D, then download the print layout and design report together.',
+    version: 'Zephyr R2 · ZIP / 1.29 MB',
+    modelUrl: 'projects/chatgpt-glider/assembly.glb',
+    downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/ChatGPT-Glider-STEP-and-Report.zip',
+    downloadFilename: 'ChatGPT-Glider-STEP-and-Report.zip',
+    downloadLabel: 'Download STEP + report',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design report (PDF).'
+  }, {
+    id: 'claude-glider',
+    competition: 'gliders',
+    category: 'GLIDER COMPETITION / CLAUDE',
+    title: 'Claude’s Glider',
+    description: 'Claude’s Javelin420 v5 glider. Explore the assembled design in 3D, then download the print layout and design report together.',
+    version: 'Javelin420 v5 · ZIP / 2.42 MB',
+    modelUrl: 'projects/claude-glider/assembly.glb',
+    downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/Claude-Glider-STEP-and-Report.zip',
+    downloadFilename: 'Claude-Glider-STEP-and-Report.zip',
+    downloadLabel: 'Download STEP + report',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design report (PDF).'
   }],
   features: []
 };
