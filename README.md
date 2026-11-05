@@ -26,9 +26,9 @@ Trebuchet entries: ChatGPT uses Mantis35_exports/Mantis35_Assembly.step for its 
 
 All interactive previews use the same neutral gray material, applied before revealing the model. This changes preview appearance only; source CAD files and STEP downloads retain their original materials.
 
-Competition tabs: list competitions in the desired display order in content.js (Catapult is first for now), and give every project its competition ID. The first competition opens on a normal visit. Only the selected competition is shown, and its cards are created on first selection. Existing project links still open their owning competition. Competition links use #competition-ID. Tabs support arrow keys, Home/End and browser Back/Forward.
+Competition tabs: list competitions in the desired display order in content.js (Gliders is first), and give every project its competition ID. The first competition opens on a normal visit. Only the selected competition is shown, and its cards are created on first selection. Existing project links still open their owning competition. Competition links use #competition-ID. Tabs support arrow keys, Home/End and browser Back/Forward.
 
-Egg Drop sources: D:/Content/Competitions/Egg Drop. ChatGPT preview: Halo-R12-Stable-Assembled.step; download: Halo-R12-Stable-PrintPlate.step. Claude preview: Claude_EggDrop_AIRBRAKE_ASSEMBLED_v2.step; download: Claude_EggDrop_AIRBRAKE_A1_plate_v2.step. Both STEP downloads are unchanged, with assembled GLB previews using the shared gray finish. Catapult remains first by request.
+Egg Drop sources: D:/Content/Competitions/Egg Drop. ChatGPT preview: Halo-R12-Stable-Assembled.step; download: Halo-R12-Stable-PrintPlate.step. Claude preview: Claude_EggDrop_AIRBRAKE_ASSEMBLED_v2.step; download: Claude_EggDrop_AIRBRAKE_A1_plate_v2.step. Both STEP downloads are unchanged, with assembled GLB previews using the shared gray finish. Gliders is now first by request.
 
 ## Download counters
 
@@ -40,7 +40,7 @@ For future files, upload each unchanged print-ready STEP as a public release ass
 
 ## Gliders
 
-Gliders bundles are public release assets under gliders-v1. Each ZIP includes the unchanged print-layout STEP and original PDF report; assembled GLBs stay on Pages. Catapult remains the default tab. Gemini is not yet included.
+Gliders bundles are public release assets under gliders-v1. Each ZIP includes the unchanged print-layout STEP and original PDF report; assembled GLBs stay on Pages. Gliders is the default tab. Gemini is not yet included.
 
 ChatGPT sources: D:/Content/Competitions/Glider/Zephyr440_R2_100g. Preview: STEP/ZephyrR2_assembly.step. Bundle: STEP/ZephyrR2_A1_plate.step and output/pdf/ChatGPT_Project_Report.pdf.
 

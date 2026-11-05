@@ -1,11 +1,11 @@
 // Public project assets. The assembled preview and print download stay separate.
 window.siteContent = {
-  // Display order; the first tab opens by default. Catapult is featured for now.
+  // Display order; the first tab opens by default. Gliders is featured for now.
   competitions: [
+    { id: 'gliders', title: 'Gliders' },
     { id: 'catapult', title: 'Catapult' },
     { id: 'trebuchet', title: 'Trebuchet' },
-    { id: 'egg-drop', title: 'Egg Drop' },
-    { id: 'gliders', title: 'Gliders' }
+    { id: 'egg-drop', title: 'Egg Drop' }
   ],
   projects: [{
     id: 'chatgpt-catapult',
@@ -88,25 +88,25 @@ window.siteContent = {
     competition: 'gliders',
     category: 'GLIDER COMPETITION / CHATGPT',
     title: 'ChatGPT’s Glider',
-    description: 'ChatGPT’s Zephyr R2 glider. Explore the assembled design in 3D, then download the print layout and design report together.',
-    version: 'Zephyr R2 · ZIP / 1.29 MB',
+    description: 'ChatGPT’s glider. Explore the assembled design in 3D, then download the print layout and design Report together.',
+    version: 'ZIP / 1.29 MB',
     modelUrl: 'projects/chatgpt-glider/assembly.glb',
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/ChatGPT-Glider-STEP-and-Report.zip',
     downloadFilename: 'ChatGPT-Glider-STEP-and-Report.zip',
-    downloadLabel: 'Download STEP + report',
-    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design report (PDF).'
+    downloadLabel: 'Download STEP + Report',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design Report (PDF).'
   }, {
     id: 'claude-glider',
     competition: 'gliders',
     category: 'GLIDER COMPETITION / CLAUDE',
     title: 'Claude’s Glider',
-    description: 'Claude’s Javelin420 v5 glider. Explore the assembled design in 3D, then download the print layout and design report together.',
-    version: 'Javelin420 v5 · ZIP / 2.42 MB',
+    description: 'Claude’s glider. Explore the assembled design in 3D, then download the print layout and design Report together.',
+    version: 'ZIP / 2.42 MB',
     modelUrl: 'projects/claude-glider/assembly.glb',
     downloadUrl: 'https://github.com/kjeffriess/kjeffriess.github.io/releases/download/gliders-v1/Claude-Glider-STEP-and-Report.zip',
     downloadFilename: 'Claude-Glider-STEP-and-Report.zip',
-    downloadLabel: 'Download STEP + report',
-    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design report (PDF).'
+    downloadLabel: 'Download STEP + Report',
+    downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale. Includes the design Report (PDF).'
   }],
   features: []
 };
