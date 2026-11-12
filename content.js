@@ -1,8 +1,7 @@
 // Public project assets. The assembled preview and print download stay separate.
 window.siteContent = {
-  // Display order; the first tab opens by default. Whistle is featured for now.
+  // Display order; the first tab opens by default. Gliders is featured for now.
   competitions: [
-    { id: 'whistle', title: 'Whistle' },
     { id: 'gliders', title: 'Gliders' },
     { id: 'catapult', title: 'Catapult' },
     { id: 'trebuchet', title: 'Trebuchet' },
@@ -120,42 +119,6 @@ window.siteContent = {
     downloadFilename: 'Gemini-Glider-STEP-and-Report.zip',
     downloadLabel: 'Download STEP + Report',
     downloadNote: 'Use the supplied print layout. Import into your slicer at 100% scale.'
-  }, {
-    "id": "chatgpt-whistle",
-    "competition": "whistle",
-    "category": "WHISTLE COMPETITION / CHATGPT",
-    "title": "ChatGPT’s Whistle",
-    "description": "ChatGPT’s whistle. Explore the design in 3D, then download the print layout.",
-    "version": "STEP / 444 KB",
-    "modelUrl": "projects/chatgpt-whistle/assembly.glb",
-    "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/whistle-v1/hornet_plate.step",
-    "downloadFilename": "hornet_plate.step",
-    "downloadLabel": "Download print-ready STEP",
-    "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
-}, {
-    "id": "claude-whistle",
-    "competition": "whistle",
-    "category": "WHISTLE COMPETITION / CLAUDE",
-    "title": "Claude’s Whistle",
-    "description": "Claude’s whistle. Explore the design in 3D, then download the print layout.",
-    "version": "STEP / 718 KB",
-    "modelUrl": "projects/claude-whistle/assembly.glb",
-    "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/whistle-v1/Claude_LoudWhistle_A1_plate.step",
-    "downloadFilename": "Claude_LoudWhistle_A1_plate.step",
-    "downloadLabel": "Download print-ready STEP",
-    "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
-}, {
-    "id": "gemini-whistle",
-    "competition": "whistle",
-    "category": "WHISTLE COMPETITION / GEMINI",
-    "title": "Gemini’s Whistle",
-    "description": "Gemini’s whistle. Explore the assembled design in 3D, then download the print layout.",
-    "version": "STEP / 292 KB",
-    "modelUrl": "projects/gemini-whistle/assembly.glb",
-    "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/whistle-v1/BansheeX3_Whistle_A1_PrintPlate.step",
-    "downloadFilename": "BansheeX3_Whistle_A1_PrintPlate.step",
-    "downloadLabel": "Download print-ready STEP",
-    "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
-}],
+  }],
   features: []
 };
