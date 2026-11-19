@@ -1,13 +1,66 @@
 // Public project assets. The assembled preview and print download stay separate.
 window.siteContent = {
-  // Display order; the first tab opens by default. Gliders is featured for now.
+  // Display order; the first tab opens by default. Catapult Tournament is featured for now.
   competitions: [
+    { id: 'catapult-tournament', title: 'Catapult Tournament' },
     { id: 'gliders', title: 'Gliders' },
     { id: 'catapult', title: 'Catapult' },
     { id: 'trebuchet', title: 'Trebuchet' },
     { id: 'egg-drop', title: 'Egg Drop' }
   ],
-  projects: [{
+  projects: [
+{
+  "id": "chatgpt-catapult-tournament",
+  "competition": "catapult-tournament",
+  "category": "CATAPULT TOURNAMENT / CHATGPT",
+  "title": "ChatGPT’s Catapult",
+  "description": "Explore the assembled design in 3D. The ZIP includes the print-ready STEP and assembly video.",
+  "version": "ZIP / 2.92 MB",
+  "modelUrl": "projects/chatgpt-catapult-tournament/assembly.glb",
+  "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/catapult-tournament-v1/ChatGPT-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadFilename": "ChatGPT-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadLabel": "Download STEP + Video",
+  "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
+},
+{
+  "id": "claude-catapult-tournament",
+  "competition": "catapult-tournament",
+  "category": "CATAPULT TOURNAMENT / CLAUDE",
+  "title": "Claude’s Catapult",
+  "description": "Explore the assembled design in 3D. The ZIP includes the print-ready STEP and assembly video.",
+  "version": "ZIP / 10.66 MB",
+  "modelUrl": "projects/claude-catapult-tournament/assembly.glb",
+  "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/catapult-tournament-v1/Claude-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadFilename": "Claude-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadLabel": "Download STEP + Video",
+  "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
+},
+{
+  "id": "gemini-catapult-tournament",
+  "competition": "catapult-tournament",
+  "category": "CATAPULT TOURNAMENT / GEMINI",
+  "title": "Gemini’s Catapult",
+  "description": "Explore the assembled design in 3D. The ZIP includes the print-ready STEP and assembly video.",
+  "version": "ZIP / 4.07 MB",
+  "modelUrl": "projects/gemini-catapult-tournament/assembly.glb",
+  "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/catapult-tournament-v1/Gemini-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadFilename": "Gemini-Catapult-Tournament-STEP-and-Video.zip",
+  "downloadLabel": "Download STEP + Video",
+  "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
+},
+{
+  "id": "grok-catapult-tournament",
+  "competition": "catapult-tournament",
+  "category": "CATAPULT TOURNAMENT / GROK",
+  "title": "Grok’s Catapult",
+  "description": "Explore the assembled design in 3D. The ZIP includes the print-ready STEP and assembly PDF.",
+  "version": "ZIP / 8.79 MB",
+  "modelUrl": "projects/grok-catapult-tournament/assembly.glb",
+  "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/catapult-tournament-v1/Grok-Catapult-Tournament-STEP-and-PDF.zip",
+  "downloadFilename": "Grok-Catapult-Tournament-STEP-and-PDF.zip",
+  "downloadLabel": "Download STEP + PDF",
+  "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
+}, {
     id: 'chatgpt-catapult',
     competition: 'catapult',
     category: 'CATAPULT COMPETITION / CHATGPT',
