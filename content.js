@@ -49,18 +49,6 @@ window.siteContent = {
   "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
 },
 {
-  "id": "grok-catapult-tournament",
-  "competition": "catapult-tournament",
-  "category": "CATAPULT TOURNAMENT / GROK",
-  "title": "Grok’s Catapult",
-  "description": "Explore the assembled design in 3D. The ZIP includes the print-ready STEP and assembly PDF.",
-  "version": "ZIP / 8.79 MB",
-  "modelUrl": "projects/grok-catapult-tournament/assembly.glb",
-  "downloadUrl": "https://github.com/kjeffriess/kjeffriess.github.io/releases/download/catapult-tournament-v1/Grok-Catapult-Tournament-STEP-and-PDF.zip",
-  "downloadFilename": "Grok-Catapult-Tournament-STEP-and-PDF.zip",
-  "downloadLabel": "Download STEP + PDF",
-  "downloadNote": "Use the supplied print layout. Import into your slicer at 100% scale."
-}, {
     id: 'chatgpt-catapult',
     competition: 'catapult',
     category: 'CATAPULT COMPETITION / CHATGPT',
